@@ -3,7 +3,7 @@ from pymongo import *
 #THIS IS A SPIKE SOLUTION!
 
 collections_to_replay = ["events.foobar"]
-
+	
 connection = Connection()
 holmes = connection.holmes
 
