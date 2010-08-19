@@ -8,9 +8,15 @@ connection = Connection()
 holmes = connection.holmes
 
 #getting the collection foobar
-col = holmes.events.foobar
+col = holmes.events.cpu
+
 #getting all
 all = col.find()
 
 #filtering
 sorted = col.find().sort("timestamp")
+
+for s in sorted:
+  print s
+
+
